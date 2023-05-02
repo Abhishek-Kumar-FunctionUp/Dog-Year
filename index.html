@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate Your Age in Dog Years</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h1>Calculate Your Age in Dog Years</h1>
+	<form>
+		<label for="age">Enter your age:</label>
+    <p>Age should be greater than or equal to 0 and less than 100</p>
+		<input type="number" id="age" name="age" value="" min="0" max="100" required onchange="myInput(this.value)">
+		<button type="button" onclick="calculateAge()">Calculate</button>
+	</form>
+	<div id="result" class="result"></div>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
